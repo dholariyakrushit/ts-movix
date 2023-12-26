@@ -1,0 +1,20 @@
+.signup-form {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 15px;
+  padding: 33px;
+  border: 1px solid white;
+  border-radius: 20px;
+  @media (max-width:425px) {
+    border: none;
+    padding: 15px;
+  }
+  .possword-feild {
+    position: relative;
+    .pass-group-btn {
+      position: absolute;
+      right: 0;
+      top: 32px;
+    }
+  }
+}

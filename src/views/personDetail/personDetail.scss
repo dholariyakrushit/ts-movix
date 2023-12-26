@@ -1,0 +1,40 @@
+.explore {
+  min-height: 600px;
+  width: 100%;
+  background-color: rgb(99, 120, 195);
+  padding: 10px;
+
+  .img-poster {
+    border-radius: 10px;
+    min-height: 550px;
+    object-fit: cover;
+  }
+
+  &-detail {
+    max-width: 650px;
+    .biography {
+        text-align: justify;
+    //   font-size: 1em;
+    //   display: -webkit-box;
+    //   -webkit-line-clamp: 5;
+    //   -webkit-box-orient: vertical;
+    //   text-overflow: ellipsis;
+    //   overflow: hidden;
+    }
+    .personal-info {
+      ul {
+        li {
+          margin-bottom: 6px;
+          .title {
+            font-weight: 500;
+            font-size: 16px;
+            display: inline;
+          }
+          .data {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.heros {
+  position: relative;
+  .bg-img {
+    // min-height: 400px;
+    height: 95vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-body {
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    right: 20%;
+    text-align: center;
+    @media (max-width: "833px") {
+      right: 15%;
+      left: 15%;
+    }
+    @media (max-width: "768px") {
+      top: 20%;
+    }
+    @media (max-width: "425px") {
+      left: 0;
+      right: 0;
+    }
+
+    h1 {
+      font-size: 80px;
+      font-weight: 600;
+      color: rgb(255, 255, 255);
+      line-height: 7rem;
+      @media (max-width: "575px") {
+        font-size: 60px;
+        line-height: 4rem;
+      }
+      @media (max-width: "375px") {
+        font-size: 46px;
+        line-height: 2rem;
+      }
+    }
+    p {
+      font-size: 20px;
+      color: white;
+      @media (max-width: "575px") {
+        font-size: 16px;
+        margin-top: 25px;
+      }
+    }
+    input {
+      width: 400px;
+      height: 40px;
+      border-radius: 20px 0 0 20px;
+      padding: 6px 6px 7px 16px;
+      border: none !important;
+      &:focus-visible {
+        outline: none !important;
+      }
+      @media (max-width: "833px") {
+        width: 340px;
+
+        min-height: 30px;
+      }
+      @media (max-width: "593px") {
+        width: 260px;
+
+        min-height: 30px;
+      }
+      @media (max-width: "480px") {
+        width: 220px;
+
+        min-height: 20px;
+      }
+    }
+    .search-btn {
+      border-radius: 0 20px 20px 0;
+      height: 41px;
+    }
+    .autoSuggection {
+      background-color: aliceblue;
+      color: black;
+      max-height: 265px;
+      position: relative;
+      text-align: start;
+      overflow-y: scroll;
+      z-index: 1 !important;
+      list-style: none;
+      margin: 1px 0 0 20px;
+      padding: 0px 0px 0px 10px;
+      border-radius: 10px;
+      width: 473px;
+      margin: auto;
+      cursor: pointer;
+      li {
+        &:hover {
+          color: rgb(255, 255, 255);
+          height: 26px;
+          background: #00adff;
+        }
+      }
+    }
+  }
+}

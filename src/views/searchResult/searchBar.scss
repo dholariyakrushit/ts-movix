@@ -1,0 +1,120 @@
+a {
+  text-decoration: none !important;
+}
+.searchresult {
+  background: #3c859e;
+  max-width: 300px;
+  height: 500px;
+  border-radius: 10px;
+ @media (max-width:"992px") {
+  margin: auto;
+ }
+  .result-title {
+    padding: 10px 10px;
+    background: #2748a5;
+    border-radius: 10px 10px 0 0;
+    height: 60px;
+  }
+  .resultdata {
+    padding-top: 10px;
+    .resultvalue {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      p {
+        font-size: 18px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.searchbar {
+  max-width: 800px;
+  height: 140px;
+  display: flex !important;
+  flex-direction: row;
+  padding: 0 !important;
+  color: black !important;
+  @media (max-width: "375px") {
+    width: 350px;
+    height: 110px;
+  }
+  @media (max-width: "320px") {
+    width: 300px;
+    height: 110px;
+  }
+  .card-img-top {
+    width: 111px !important ;
+    height: 138px;
+    object-fit: cover;
+    border-radius: 4px;
+    @media (max-width: "375px") {
+      width: 90px !important  ;
+      height: auto;
+    }
+  }
+  .card-body {
+    .card-title {
+      @media (max-width: "375px") {
+        font-size: 16px;
+        margin: 0;
+        width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .card-text {
+      @media (max-width: "375px") {
+        margin-bottom: 0.5rem !important;
+        font-size: 16px;
+      }
+      @media (max-width: "320px") {
+        margin-bottom: 0.5rem !important;
+        font-size: 14px;
+      }
+    }
+    .overview {
+      font-size: 1em;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin: 0;
+      @media (max-width: "425px") {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.person {
+  margin-top: 2rem;
+  &-body {
+    margin-top: 2px;
+    min-height: 105px;
+    padding: 0;
+
+    .profile_img {
+      height: 100px;
+      width: 80px;
+      border-radius: 10px;
+    }
+    .acting {
+      font-size: 1em;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin: 0;
+    }
+  }
+}

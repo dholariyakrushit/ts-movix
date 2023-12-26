@@ -1,0 +1,44 @@
+.latest {
+  min-height: 600px;
+  width: 100%;
+  background-color: #12324d;
+  padding: 12px;
+  &-body {
+    p {
+      text-align: center;
+      font-size: 32px;
+    }
+  }
+  .img-poster {
+    border-radius: 10px;
+    min-height: 550px;
+    object-fit: cover;
+  }
+  .circlerat {
+    .circleRating {
+      background-color: var(--black);
+      border-radius: 50%;
+      height: 70px !important;
+      width: 70px !important;
+      position: relative !important;
+      bottom: 0;
+
+      .CircularProgressbar-text {
+        font-size: 34px;
+        font-weight: 700;
+        // fill: var(--black);
+      }
+      .CircularProgressbar-trail {
+        stroke: transparent;
+      }
+    }
+
+    .CircularProgressbar {
+      width: 100%;
+      vertical-align: middle;
+      background-color: white;
+      border-radius: 50%;
+      padding: 3px;
+    }
+  }
+}

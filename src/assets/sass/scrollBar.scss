@@ -1,0 +1,43 @@
+.cards {
+  height: 250px;
+  margin-top: 8rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    p {
+      font-size: 24px;
+    }
+    .btn-group{
+      .btn{
+        --bs-btn-border-radius: 20px;
+      }
+    }
+  }
+
+  .card {
+    max-width: 133px;
+
+    border: none !important;
+
+    &-img {
+      height: 200px;
+      object-fit: cover;
+      text-align: center;
+      border-radius: 8px !important;
+    }
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 13px;
+  // text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 1.5rem;
+  width: 130px;
+}
