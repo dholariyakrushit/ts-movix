@@ -3,8 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Footer from "../components/comman/Footer";
 import NavBar from "../components/comman/NavBar";
-import SignUp from "../views/signUpPage/SignUp";
-import LogInPage from "../views/logIn/LogInPage";
 
 const Home = React.lazy(() => import("../views/home/Home"));
 const ExplorePage = React.lazy(() =>
