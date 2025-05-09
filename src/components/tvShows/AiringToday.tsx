@@ -15,7 +15,7 @@ function AiringToday() {
   const [airingmovie, setAiringMovie] = useState<movieList[]>();
 
   useEffect(() => {
-    fetchDataFromApi("/configuration")
+    fetchDataFromApi("configuration")
       .then((res) => {
         const url = {
           backdrop: res.images.secure_base_url + "original",

@@ -28,7 +28,7 @@ function Hero() {
   };
 
   useEffect(() => {
-    fetchDataFromApi("/configuration")
+    fetchDataFromApi("configuration")
       .then((res: configurationType) => {
         const url = {
           backdrop: res.images.secure_base_url + "original",
@@ -38,7 +38,7 @@ function Hero() {
         return url;
       })
       .then((url) => {
-        fetchDataFromApi("/movie/popular").then(
+        fetchDataFromApi("movie/popular").then(
           (res: searchResultType): void => {
             const bg =
               url?.backdrop +

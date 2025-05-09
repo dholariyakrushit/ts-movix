@@ -13,7 +13,7 @@ function UpComing() {
   const [upComing, setUpComing] = useState<movieList[] | undefined>();
 
   useEffect(() => {
-    fetchDataFromApi("/configuration")
+    fetchDataFromApi("configuration")
       .then((res) => {
         const url = {
           backdrop: res.images.secure_base_url + "original",
@@ -24,7 +24,7 @@ function UpComing() {
       })
 
       .then((url) => {
-        fetchDataFromApi(`/movie/upcoming`).then((res) => {
+        fetchDataFromApi(`movie/upcoming`).then((res) => {
           const tempMovie = res.results.map(
             (item: movieList): movieList => ({
               ...item,

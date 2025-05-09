@@ -25,7 +25,7 @@ function MovieCredits({ id }: { id: string }) {
     { name: "crew", value: "2" },
   ];
   useEffect(() => {
-    fetchDataFromApi("/configuration")
+    fetchDataFromApi("configuration")
       .then((res) => {
         const url = {
           backdrop: res.images.secure_base_url + "original",
@@ -36,7 +36,7 @@ function MovieCredits({ id }: { id: string }) {
       })
 
       .then((url) => {
-        fetchDataFromApi(`/person/${id}/movie_credits`).then((res) => {
+        fetchDataFromApi(`person/${id}/movie_credits`).then((res) => {
           //   console.log(res);
 
           const cast = res.cast.map((item: movieList) => ({

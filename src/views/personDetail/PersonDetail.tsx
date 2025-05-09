@@ -13,10 +13,10 @@ function PersonDetail() {
   const [background, setBackground] = useState<string>();
   const params = useParams();
   useEffect(() => {
-    fetchDataFromApi(`/person/${params.id}`).then((res) => {
+    fetchDataFromApi(`person/${params.id}`).then((res) => {
       setDetail(res);
     });
-    fetchDataFromApi("/configuration")
+    fetchDataFromApi("configuration")
       .then((res) => {
         const url = {
           backdrop: res.images.secure_base_url + "original",

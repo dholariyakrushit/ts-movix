@@ -14,7 +14,7 @@ function LatestTv() {
   const [latest, setLatest] = useState<latestTvShowData>();
 
   useEffect(() => {
-    fetchDataFromApi("/configuration")
+    fetchDataFromApi("configuration")
       .then((res) => {
         const url = {
           backdrop: res.images.secure_base_url + "original",

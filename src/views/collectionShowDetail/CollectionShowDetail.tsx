@@ -23,7 +23,7 @@ function CollectionShowDetail() {
     fetchDataFromApi(`${params.type}/${params.id}`).then((res) => {
       setDetail(res);
     });
-    fetchDataFromApi("/configuration")
+    fetchDataFromApi("configuration")
       .then((res) => {
         const url = {
           backdrop: res.images.secure_base_url + "original",
